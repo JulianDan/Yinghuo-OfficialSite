@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>导航栏</title>
+    <!-- 引入CSS和JS -->
+    <link rel="stylesheet" href="/css/nav.css">
+    <script src="/js/nav.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;">
+</head>
+<body>
+    <!-- 导航栏组件 -->
+    <div id="navbar" class="navbar">
+        <div id="logo_box" class="logo_box">
+            <a href="/#banner_link"><img src="/images/Firefly.png" class="logo"></a>
+        </div>
+        <!-- 用于手机端的菜单按键 -->
+        <div class="menu_btn" onclick="menu_show()">
+            <div id="menu_top" class="menu_top"></div>
+            <div id="menu_bottom" class="menu_bottom"></div>
+        </div>
+        <div id="links_box" class="links_box">
+            <a href="https://github.com/yinghuowork" class="nav_link">开源</a>
+            <a href="#" class="nav_link">服务</a>
+            <a href="/#product_link" class="nav_link">作品</a>
+            <a href="#" class="nav_link">服务</a>
+            <a href="#" class="nav_link">关于我们</a>
+            <a href="#" class="nav_link">招贤纳士</a>
+        </div>
+    </div>
+    <!-- 手机端的菜单，独立于导航栏。cover用于构建遮罩 -->
+    <div class="cover" id="cover" show="false">
+        <div class="menu_box" id="menu_box">
+            <a href="https://github.com/yinghuowork" class="nav_link">开源</a><br>
+            <a href="#" class="nav_link">服务</a><br>
+            <a href="/#product_link" class="nav_link">作品</a><br>
+            <a href="#" class="nav_link">关于我们</a><br>
+            <a href="#" class="nav_link">招贤纳士</a>
+        </div>
+    </div>
+</body> 
